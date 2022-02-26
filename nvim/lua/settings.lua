@@ -32,6 +32,9 @@ opt.showtabline = 2
 opt.splitbelow = true
 opt.splitright = true
 
+opt.scrolloff = 8
+opt.sidescrolloff = 8
+
 opt.hlsearch = true
 opt.ignorecase = true         -- ignore case letters when search
 opt.smartcase = true          -- ignore lowercase for the whole pattern

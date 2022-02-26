@@ -63,7 +63,7 @@ local lsp_installer = require("nvim-lsp-installer")
 lsp_installer.on_server_ready(function(server)
     local opts = {
         on_attach = on_attach,
-        capabilities = capabilities,
+        -- capabilities = capabilities,
     }
 
     -- (optional) Customize the options passed to the server
