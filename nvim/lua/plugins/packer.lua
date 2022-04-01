@@ -88,4 +88,6 @@ return packer.startup(function()
 
   use "terrortylor/nvim-comment"
   require('nvim_comment').setup()
+
+  use "github/copilot.vim"
 end)
