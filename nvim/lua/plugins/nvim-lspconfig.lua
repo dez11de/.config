@@ -77,10 +77,10 @@ lsp_installer.on_server_ready(function(server)
     server:setup(opts)
 end)
 
-require('lspconfig').gopls.setup({
-    settings = {
-        gopls = {
-            gofumpt = true
-        }
-    }
-})
+-- require('lspconfig').gopls.setup({
+--     settings = {
+--         gopls = {
+--             gofumpt = true
+--         }
+--     }
+-- })
