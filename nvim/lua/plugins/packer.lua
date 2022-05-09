@@ -38,9 +38,6 @@ return packer.startup(function()
   -- file explorer
   use 'kyazdani42/nvim-tree.lua'
 
-  -- icons
-  use 'kyazdani42/nvim-web-devicons'
-
   use {'ZhiyuanLck/smart-pairs', event="InsertEnter", config=function() require('pairs'):setup() end}
 
 
@@ -72,19 +69,11 @@ return packer.startup(function()
     end
   }
 
-  use {"rcarriga/vim-ultest",
-        requires = {"vim-test/vim-test"}, run = ":UpdateRemotePlugins"}
-
   use {"nvim-telescope/telescope.nvim",
     requires = {
         "nvim-telescope/telescope-media-files.nvim",
     }
   }
-
-  use {
-      'nvim-lualine/lualine.nvim',
-      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-    }
 
   use "terrortylor/nvim-comment"
   require('nvim_comment').setup()
