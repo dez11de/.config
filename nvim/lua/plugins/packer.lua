@@ -50,16 +50,19 @@ return packer.startup(function()
       'williamboman/nvim-lsp-installer',
   }
 
-  -- autocomplete
-  use {
-    'hrsh7th/nvim-cmp',
+    -- autocomplete
+    use { 'hrsh7th/nvim-cmp',
     requires = {
-      'L3MON4D3/LuaSnip',
-      'hrsh7th/cmp-nvim-lsp',
-      'hrsh7th/cmp-buffer',
-      'saadparwaiz1/cmp_luasnip',
-    },
-  }
+        'L3MON4D3/LuaSnip',
+        'hrsh7th/cmp-nvim-lsp',
+        'hrsh7th/cmp-buffer',
+        'saadparwaiz1/cmp_luasnip',
+        },
+    }
+
+    use { 'nvim-lualine/lualine.nvim',
+        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+    }
 
   -- git labels
   use {
